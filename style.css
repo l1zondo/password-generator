@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;700;800&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -12,15 +12,16 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #43a047;
+    background: #43A047;
 }
 
 .container{
     width: 450px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
+
 .container h2{
     font-weight: 600;
     font-size: 1.31rem;
@@ -56,8 +57,9 @@ body{
     line-height: 53px;
     color: #707070;
 }
+
 .input-box span:hover{
-    color: #43a047 !important;
+    color: #43A047 !important;
 }
 
 .wrapper .pass-indicator{
@@ -74,7 +76,7 @@ body{
     height: 100%;
     width: 50%;
     border-radius: inherit;
-    transition: width 0,3s ease;
+    transition: width 0.3s ease;
 }
 
 .pass-indicator#weak::before{
@@ -83,16 +85,14 @@ body{
 }
 
 .pass-indicator#medium::before{
-    width: 20%;
-    background: #f1c90b;
+    width: 50%;
+    background: #f1c80b;
 }
 
-.pass-indicator#weak::before{
-    width: 20%;
+.pass-indicator#strong::before{
+    width: 100%;
     background: #43A047;
 }
-
-
 
 .wrapper .pass-length{
     margin: 1.56rem 0 1.25rem;
@@ -148,13 +148,10 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    background: #43a047;
-    font-size: 1.6rem;
+    background: #43A047;
+    font-size: 1.06rem;
     padding: 0.94rem 0;
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
 }
-
-
-
